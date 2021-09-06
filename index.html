@@ -4,28 +4,79 @@
         <meta charset="UTF-8">
         <title>Google</title>
         <style>
+            @import
+            url(https://fonts.googleapis.com/css?family=Open+Sans);
+
             .bttn {
                 border: none;
-                background-color: inherit;
+                background-color: rgb(49,49,53);
                 padding: 14px 28px;
                 font-size: 16px;
                 cursor: pointer;
                 display: inline-block;
-                color: black;
+                color: rgb(254,254,255);
+                font-family: "Open Sans", sans-serif;
             }
+
+            .searchbar {
+                width: 50%;
+                border: 2px rgb(254,254,255);
+                background-color: inherit;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: text;
+                color: rgb(254,254,255);
+            }
+
             .bttn:hover {
-                background: #e7e7e7;
+                border: 1px solid rgb(254,254,255) !important;
+            }
+
+            .searchbar:hover {
+                background-color: 1px solid rgb(254,254,255) !important;
+            }
+
+            body {
+                background-color: rgb(33,32,36);
+            }
+
+            searchbar {
+                color: rgb(33,32,36)
             }
         </style>
     </head>
     <body>
+        
+        <div class="navbar">
+            <a class="active"></a>
+            <a href="#about">About</a>
+            <a href="#store">Store</a>
+            <a href="#gmail">Gmail</a>
+            <a href="#image">Images</a>
+            <a href="#googleapps">GoogleApps_logo</a>
+            <a href="#signin">SignIn_button</a>
+        </div>
+        
         <img id="GoogleLogo" src="https://1000marken.net/wp-content/uploads/2021/01/Google-logo.png" alt="Google Logo" width="500" height="600">
-        
-        <label for="searchbar">Search Google:</label>
-        <input type="search" id="searchbar" name="searchbar">
+            
+
+        <div class="searchbar"></div>
+            <input class="searchbar" type="search">
+        </div>
+
     
-        <button class='bttn'>Google Search</button>
+        <button class="bttn">Google Search</button>
         
-        <button class='bttn'>I'm Feeling Lucky</button>
+        <button class="bttn">I'm Feeling Lucky</button>
+
+        <div class="btmnavbar">
+            <a class="active"></a>
+            <a href="#advertising">Advertising</a>
+            <a href="#business">Business</a>
+            <a href="#howsearchworks">How Search works</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#terms">Terms</a>
+            <a href="#settings">Settings</a>
+        </div>
     </body>
 </html>
