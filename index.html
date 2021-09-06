@@ -3,17 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Google</title>
+        <style>
+            .bttn {
+                border: none;
+                background-color: inherit;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+                color: black;
+            }
+            .bttn:hover {
+                background: #e7e7e7;
+            }
+        </style>
     </head>
     <body>
-        <img id="https://de.wikipedia.org/wiki/Datei:Google_logo_(2010-2013).svg" src="Google_logo.png" alt="Google logo">
+        <img id="GoogleLogo" src="https://1000marken.net/wp-content/uploads/2021/01/Google-logo.png" alt="Google Logo" width="500" height="600">
         
         <label for="searchbar">Search Google:</label>
         <input type="search" id="searchbar" name="searchbar">
     
-        <label for="GoogleBttn">Google Search</label>
-        <input type="button" id="GoogleBttn" name="GoogleBttn">
+        <button class='bttn'>Google Search</button>
         
-        <label for="GoogleLcky">I"m Feeling Lucky</label>
-        <input type="button" id="GoogleLcky" name="GoogleLcky">
+        <button class='bttn'>I'm Feeling Lucky</button>
     </body>
 </html>
