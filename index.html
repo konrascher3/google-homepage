@@ -4,79 +4,83 @@
         <meta charset="UTF-8">
         <title>Google</title>
         <style>
-            @import
-            url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-            .bttn {
-                border: none;
-                background-color: rgb(49,49,53);
-                padding: 14px 28px;
-                font-size: 16px;
-                cursor: pointer;
-                display: inline-block;
-                color: rgb(254,254,255);
-                font-family: "Open Sans", sans-serif;
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
             }
 
-            .searchbar {
-                width: 50%;
-                border: 2px rgb(254,254,255);
-                background-color: inherit;
-                padding: 14px 28px;
-                font-size: 16px;
-                cursor: text;
-                color: rgb(254,254,255);
+            html, body {
+                min-width: 400px;
             }
 
-            .bttn:hover {
-                border: 1px solid rgb(254,254,255) !important;
-            }
-
-            .searchbar:hover {
-                background-color: 1px solid rgb(254,254,255) !important;
+            body, input, button {
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: rgb(189, 193, 198)
             }
 
             body {
-                background-color: rgb(33,32,36);
+                background: rgb(32, 33, 36)
             }
 
-            searchbar {
-                color: rgb(33,32,36)
+            .Overlay {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
             }
+
+            .Navbar {
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .NavbarBox {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+            }
+
+            .AboutStoreHeight {
+                height: 60px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+
+            a.NavbarAboutStore:first-of-type {
+                margin-left: 15px;
+            }
+
+            a.NavbarAboutStore {
+                display: inline-block;
+                padding: 5px;
+                margin: 0 5px;
+                color: rgb(189, 193, 198);
+            }
+
+            .TopNavbarRight {
+                display: inline-block;
+                flex-grow: 1;
+            }
+
         </style>
     </head>
     <body>
-        
-        <div class="navbar">
-            <a class="active"></a>
-            <a href="#about">About</a>
-            <a href="#store">Store</a>
-            <a href="#gmail">Gmail</a>
-            <a href="#image">Images</a>
-            <a href="#googleapps">GoogleApps_logo</a>
-            <a href="#signin">SignIn_button</a>
-        </div>
-        
-        <img id="GoogleLogo" src="https://1000marken.net/wp-content/uploads/2021/01/Google-logo.png" alt="Google Logo" width="500" height="600">
-            
-
-        <div class="searchbar"></div>
-            <input class="searchbar" type="search">
-        </div>
-
-    
-        <button class="bttn">Google Search</button>
-        
-        <button class="bttn">I'm Feeling Lucky</button>
-
-        <div class="btmnavbar">
-            <a class="active"></a>
-            <a href="#advertising">Advertising</a>
-            <a href="#business">Business</a>
-            <a href="#howsearchworks">How Search works</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#terms">Terms</a>
-            <a href="#settings">Settings</a>
+        <div class="Overlay">
+            <div class="Navbar AboutStoreHeight NavbarBox">
+                <a class="NavbarAboutStore" href="">About</a>
+                <a class="NavbarAboutStore" href="">Store</a>
+                <div class="TopNavbarRight"></div>
+            </div>
+                <div class="GoogleLogo"></div>
+                <div class="Search"></div>
+                <div class="GoogleLogoBottom"></div>
+                <div class="Navbar"></div>
         </div>
     </body>
+
+
+
 </html>
