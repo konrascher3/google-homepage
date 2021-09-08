@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Google</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+        rel="stylesheet">
         <style>
             body, html {
                 height: 100%;
@@ -151,20 +153,22 @@
 
             .SearchfieldOverlay {
                 display: flex;
-                flex: 1;
                 flex-wrap: wrap;
+
+                height: 34px;
             }
 
             .SearchfieldBox {
                 color: transparent;
-                flex: 100%;
-                white-space: pre;
                 height: 34px;
+                white-space: pre;
+
             }
 
             .Inputfield {
                 background-color: transparent;
                 border: none;
+                width: auto;
                 margin: 0;
                 padding: 0;
                 color: #e8eaed;
@@ -176,6 +180,32 @@
                 font-size: 16px;
             }
 
+            .TTSOverlay {
+                display: flex;
+                flex: auto;
+                margin-top: -5px;
+                align-items: stretch;
+                flex-direction: row;
+            }
+
+            .TTSBOX {
+              flex: 1 0 auto;
+              display: flex;
+              cursor: pointer;
+              align-items: center;
+              border: 0;
+              background: transparent;
+              outline: none;
+              padding: 0 8px;
+              width: 24px;
+              line-height: 44px;  
+            }
+
+            .material-icons {
+                height: 24px;
+                width: 24px;
+                ;
+            }
         </style>
     </head>
     <body>
@@ -203,6 +233,11 @@
                                     <div class="SearchfieldBox">
                                         <input class="Inputfield">
                                     </div>
+                                    </div>
+                                    <div class="TTSOverlay">
+                                        <div class="TTSBOX">
+                                            <span class="material-icons">mic</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
