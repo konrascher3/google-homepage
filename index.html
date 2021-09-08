@@ -72,6 +72,59 @@
                 flex-grow: 1;
             }
 
+            .MarginLogo {
+                height: 100%;
+                margin-top: auto;
+            }
+
+            .MarginLogoBox {
+                max-height: 230px;
+                text-align: center;
+            }
+
+            .LogoBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 150px;
+                max-height: 290px;
+                height: calc(100% - 560px);
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .SearchbarBox {
+                padding: 20px;
+                max-height: 160px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .SearchabrOverlay body input button {
+
+                font-size: inherit;
+                font-family: inherit;
+                color: inherit;
+                width: auto;
+                max-width: 584px;
+                position: relative;
+                margin: auto;
+                padding-top: 6px;
+            }
+
+            .Searchbar{
+                width: auto;
+                max-width: 584px;
+                background: #202124;
+                display: flex;
+                border: 1px solid #5f6368;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+            }
+
         </style>
     </head>
     <body>
@@ -81,11 +134,16 @@
                 <a class="NavbarAboutStore" href="">Store</a>
                 <div class="TopNavbarRight"></div>
             </div>
-                <div class="Overlay Overlay ">
-                    <img alt="Google Logo" height="92" width="272" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
+                <div class="LogoBox">
+                    <div class="MarginLogoBox MarginLogo">
+                        <img alt="Google Logo" height="92" width="272" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png">
+                    </div>
                 </div>
-
-                <div class="Search"></div>
+                <div class="SearchbarBox">
+                        <div class="SearchbarOverlay">
+                            <div class="Searchbar"></div>
+                        </div>
+                </div>
                 <div class="GoogleLogoBottom"></div>
                 <div class="Navbar"></div>
         </div>
