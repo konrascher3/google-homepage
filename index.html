@@ -90,7 +90,7 @@
                 max-height: 290px;
                 height: calc(100% - 560px);
                 flex-shrink: 0;
-                box-sizing: border-box;
+
             }
 
             .SearchbarBox {
@@ -125,6 +125,57 @@
                 margin: 0 auto;
             }
 
+            .SearchbarElementsBox {
+                flex: 1;
+                display: flex;
+                padding: 5px 8px 0 16px;
+            }
+
+            .SearchbarMagnifierOverlay {
+                display: flex;
+                align-items: center;
+                padding-right: 13px;
+                margin-top: -5px;
+            }
+
+            .SearchbarMagnifierBox {
+                margin: auto;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                fill: currentColor;
+                line-height: 24px;
+                position: relative;
+            }
+
+            .SearchfieldOverlay {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+            }
+
+            .SearchfieldBox {
+                color: transparent;
+                flex: 100%;
+                white-space: pre;
+                height: 34px;
+            }
+
+            .Inputfield {
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                padding: 0;
+                color: #e8eaed;
+                word-wrap: break-word;
+                outline: none;
+                display: flex;
+                margin-top: -37px;
+                height: 34px;
+                font-size: 16px;
+            }
+
         </style>
     </head>
     <body>
@@ -141,7 +192,20 @@
                 </div>
                 <div class="SearchbarBox">
                         <div class="SearchbarOverlay">
-                            <div class="Searchbar"></div>
+                            <div class="Searchbar">
+                                <div class="SearchbarElementsBox">
+                                    <div class="SearchbarMagnifierOverlay">
+                                        <div class="SearchbarMagnifierBox">
+                                            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                                        </div>
+                                    </div>
+                                    <div class="SearchfieldOverlay">
+                                    <div class="SearchfieldBox">
+                                        <input class="Inputfield">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
                 <div class="GoogleLogoBottom"></div>
