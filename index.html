@@ -206,6 +206,30 @@
                 width: 24px;
                 ;
             }
+
+            .SearchbuttonOverlay {
+               height: 70px;
+               padding-top: 18px;
+               top: 53px;
+               z-index: 0; 
+            }
+
+            .SearchbuttonBox {
+                background-color: #303134;
+                border: 1px solid #303134;
+                border-radius: 4px;
+                color: #e8eaed;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                margin: 11px 14px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
         </style>
     </head>
     <body>
@@ -243,7 +267,12 @@
                             </div>
                         </div>
                 </div>
-                <div class="GoogleLogoBottom"></div>
+                <div class="SearchbuttonOverlay">
+                    <center>
+                        <input class="SearchbuttonBox" value="Google Search" aria-label="Google Search">
+                        <input class="SearchbuttonBox" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky">
+                    </center>
+                </div>
                 <div class="Navbar"></div>
         </div>
     </body>
