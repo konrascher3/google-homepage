@@ -92,7 +92,6 @@
                 max-height: 290px;
                 height: calc(100% - 560px);
                 flex-shrink: 0;
-
             }
 
             .SearchbarBox {
@@ -103,7 +102,6 @@
             }
 
             .SearchabrOverlay body input button {
-
                 font-size: inherit;
                 font-family: inherit;
                 color: inherit;
@@ -154,7 +152,6 @@
             .SearchfieldOverlay {
                 display: flex;
                 flex-wrap: wrap;
-
                 height: 34px;
             }
 
@@ -230,6 +227,24 @@
                 cursor: pointer;
                 user-select: none;
             }
+
+            .Flexgrow {
+                flex-grow: 1;
+            }
+
+            .NavbarBottomOverlay {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .NavbarBottomColor {
+                background-color: #171717;
+            }
+
+            .NavbarBottomSpacing {
+                justify-content: space-evenly;
+            }
         </style>
     </head>
     <body>
@@ -273,7 +288,24 @@
                         <input class="SearchbuttonBox" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky">
                     </center>
                 </div>
-                <div class="Navbar"></div>
+                <div class="Navbar Flexgrow">
+                    <div class="NavbarBottomSpacing">
+                        <div class="Navbar NavbarBottomColor NavbarBottomSpacing">
+                            <div class="NavbarBottomOverlay">
+                                <div class="NavbarBottomOverlay">
+                                    <a class="NavbarAboutStore">Advertising</a>
+                                    <a class="NavbarAboutStore">Business</a>
+                                    <a class="NavbarAboutStore">How Search works</a>
+                                </div>
+                                <div class="NavbarBottomOverlay">
+                                    <a class="NavbarAboutStore">Privacy</a>
+                                    <a class="NavbarAboutStore">Terms</a>
+                                    <a class="NavbarAboutStore">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </body>
 
