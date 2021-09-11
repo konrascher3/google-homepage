@@ -13,6 +13,9 @@ body, html {
 
 body {
     background: rgb(32, 33, 36);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .Navbar div a {
@@ -34,6 +37,11 @@ header {
     flex-direction: row;
     position: fixed;
     z-index: 1;
+    align-items: center;
+    height: 60px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 6px;
 }
 
 .Navbar {
@@ -62,18 +70,13 @@ header {
 }
 
 main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   min-height: 92px;
-   position: relative;
-   max-width: 100%;
-   max-height: 290px;
-   height: calc(100% - 560px);
-   margin-top: auto;
-   object-fit: contain;
-   object-position: center bottom;
-   width: auto; 
-   flex-shrink: 0;
-   box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-height: 290px;
+    min-height: 92px;
+    height: calc(100% - 560px);
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
