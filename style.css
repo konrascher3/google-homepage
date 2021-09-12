@@ -1,7 +1,7 @@
 /* Main styling */
 
 body {
-    background: rgb(32, 33, 36);
+    background: #202124; 
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -100,11 +100,14 @@ main div {
 
 .nav-right-container_A {
     padding-left: 16px;
+    padding-right: 12px;
 }
 
 .nav-right-container_A a{
     color: white;
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    margin: 0px;
+    line-height: 24px;
 }
 
 .nav-right-container_B {
@@ -127,7 +130,7 @@ main div {
     border-radius: 4px;
     cursor: pointer;
     color: #202124;
-    padding: 9px 15px;
+    padding: 9px 25px;
     margin-right: 9px;
 }
 
@@ -149,7 +152,7 @@ main div {
     width: 100%;
     border-radius: 24px;
     padding: 5px 8px 0 16px;
-}
+}#202124
 
 #googlesearch {
     border: none;
@@ -169,8 +172,10 @@ main div {
 
 .App_Icon {
     display: inline-block;
-    padding: 18px;
+    padding-right: 18px;
+    padding-left: 8px;
     cursor: pointer;
+    color: white;
 }
 
 .Search_Icon {
