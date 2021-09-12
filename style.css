@@ -1,3 +1,12 @@
+/* Main styling */
+
+body {
+    background: rgb(32, 33, 36);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 body, input, button {
     font-size: 14px;
     font-family: arial, sans-serif;
@@ -11,24 +20,6 @@ body, html {
   min-width: 400px;
 }
 
-body {
-    background: rgb(32, 33, 36);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.Navbar div a {
-    text-decoration: none;
-    color: rgb(189, 193, 198);
-    padding: 5px;
-    margin: 0 5px;
-    white-space: nowrap;
-}
-
-.Navbar div a:first-of-type {
-    margin-left: 15px;
-}
 
 header {
     top: 0;
@@ -44,29 +35,9 @@ header {
     padding: 6px;
 }
 
-.Navbar {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 6px;
-}
-
-.Navbar div:nth-child(1) {
-    justify-content: start;
-}
-
-.Navbar div:nth-child(2) {
-    justify-content: flex-end;
-    text-align: right;
-    right: 0;
-}
-
-.Navbar div {
-    display: flex;
-    width: 50%;
-    padding: 10px;
-    align-items: center;
+form {
+    max-width: 584px;
+    margin: 0 auto;
 }
 
 main {
@@ -79,6 +50,85 @@ main {
 
 main div {
     padding-top: 109px
+}
+
+/* Navigation bar */
+
+.nav-main-container {
+    display: flex; 
+    flex-direction: row;
+    width: 100%; /* Spans over the whole width of the web page */
+    align-items: center;
+    padding: 6px; /* Adds a space surrounding the nav-main-container */
+    position: fixed; /* Fix the nav-main-container to top */
+}
+
+.nav-left-container {
+    display: flex;
+    flex-grow: 1;  /* Left and right container take the same space */
+    align-items: center; /* Centers items veretically within the container */
+    text-align: left;
+}
+
+.nav-right-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; /* Pushes content to the right */
+    margin-right: 21px; /* Adds 21px spacing from the right */
+}
+
+
+/* Format navigation bar links */
+.nav-main-container a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+.nav-main-container a:first-of-type {
+    margin-left: 9px; /* Adds 9px margin to the 'About' link */
+}
+
+.nav-main-container a:hover {
+    text-decoration: underline; /* Adds underline when hovering over links */
+}
+
+.nav-left-container a{
+    color: rgb(189, 193, 198);
+}
+
+.nav-right-container_A {
+    padding-left: 16px;
+}
+
+.nav-right-container_A a{
+    color: white;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+}
+
+.nav-right-container_B {
+    display: flex;
+    padding: 5px;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.Sign_In_Button {
+    display: flex;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    flex-direction: row;
+    background: #8ab4f8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #202124;
+    padding: 9px 15px;
+    margin-right: 9px;
 }
 
 .GoogleLogo {
@@ -115,6 +165,14 @@ main div {
     background-color: transparent;
 }
 
+/* Icon Formatting */
+
+.App_Icon {
+    display: inline-block;
+    padding: 18px;
+    cursor: pointer;
+}
+
 .Search_Icon {
     position: absolute;
     padding: 11px 37px;
@@ -128,9 +186,4 @@ main div {
     filter: contrast(0);
     margin-top: 18px; 
 
-}
-
-form {
-    max-width: 584px;
-    margin: 0 auto;
 }

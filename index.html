@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head -->
     <head>
-        <meta charset="UTF-8">
-        <title>Google</title>
+        <meta charset="UTF-8"> <!-- Character encoding -->
+        <meta name="description" content="The Odin Project - Google Search Page"> <!-- Web page description -->
+        <meta name="keywords" content="The Odin Project, Google Search Page"> <!-- Keywords for serch engines -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sets web page width to device width and initial zoom level -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-        rel="stylesheet">
-        <link rel="stylesheet" href="style.css">         
-    </head>
+        rel="stylesheet"> <!-- Import official material icons from Google -->
+        <link rel="stylesheet" href="style.css"> <!-- Reference to CSS file -->        
+        <title>Google Clone Project</title> <!-- Title of the web page displyed in the tab -->
+        </head>
+<!-- Body -->
     <body>
         <header>
-            <div class="Navbar">
-                <div>
+            <!-- Navigation bar -->
+            <div class="nav-main-container"> 
+                <!-- Main flex container holds two separate containers -->
+                <!-- Navigation bar left part-->
+                <div class="nav-left-container"> 
                     <a href="#">About</a>
                     <a href="#">Store</a>
                 </div>
-                <div>
+                <!-- Navigation bar right part-->
+                <div class="nav-right-container_A"> 
                     <a href="#">Gmail</a>
                     <a href="#">Images</a>
-                    <span class="material-icons">menu</span>
-                    <a href="#">Sign In</a>
+                </div>
+                <div class="nav-right-container_B"> 
+                    <span class="material-icons App_Icon" alt="Google Apps">apps</span>
+                    <div class="Sign_In_Button" alt="Sign in button"href="#">Sign in</div>
                 </div>
             </div>
         </header>
@@ -36,6 +47,7 @@
                 </form>
             </div>
         </main>
+<!-- Footer -->
         <footer></footer>
     </body>
 </html>
