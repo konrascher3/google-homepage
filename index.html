@@ -6,8 +6,7 @@
         <meta name="description" content="The Odin Project - Google Search Page"> <!-- Web page description -->
         <meta name="keywords" content="The Odin Project, Google Search Page"> <!-- Keywords for serch engines -->
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sets web page width to device width and initial zoom level -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-        rel="stylesheet"> <!-- Import official material icons from Google -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" > <!-- Import official material icons from Google -->
         <link rel="stylesheet" href="style.css"> <!-- Reference to CSS file -->        
         <title>Google Clone Project</title> <!-- Title of the web page displyed in the tab -->
         </head>
@@ -27,24 +26,33 @@
                     <a href="#">Gmail</a>
                     <a href="#">Images</a>
                 </div>
-                <div class="nav-right-container_B"> 
-                    <span class="material-icons App_Icon" alt="Google Apps">apps</span>
-                    <div class="Sign_In_Button" alt="Sign in button"href="#">Sign in</div>
+                <div class="nav-right-container_B">
+                    <span class="material-icons app-icon" alt="Google Apps" viewbox="0 0 24 24">apps</span>
+                    <div class="sign-in-button" alt="Sign in button" href="#">Sign in</div>
                 </div>
             </div>
         </header>
         <main>
-            <div>
-                <img class="GoogleLogo" src="https://bit.ly/3tvzTo6" alt="Google Logo">
-            </div>
-            <div>
-                <form>
-                    <div class="Search_Form">
-                        <span class="material-icons Search_Icon">search</span>
-                        <span class="material-icons Mic_Icon">mic</span>
-                        <input type="text" name="googlesearch" id="googlesearch">  
-                    </div>
-                </form>
+            <div class="search-container"> <!-- Holds Google logo, search bar, search bottons, and offerend in-->
+                <!-- Google logo flex container-->
+                <div class="logo-container">
+                    <img class="google-logo" src="https://bit.ly/3tvzTo6" alt="A classy version of the Google logo">
+                </div>
+                <!-- Search bar flex container holds search bar and icons-->
+                <div class="search-bar-container">
+                    <span class="material-icons search-icon">search</span>
+                    <span class="material-icons mic-icon">mic</span>
+                    <input class="input" type="text" name="google-search" id="google-search">  
+                </div>
+                <!-- Search buttons flex containers holds both search buttons-->
+                <div class="search-buttons-container button">
+                    <div class="google-search-button" alt="Google Search">Google Search</div>
+                    <div class="lucky-search-button" alt="I'm Felling Lucky">I'm Feeling Inspired</div>
+                </div>
+                <!-- Offered in flex container holds alternative google search language-->
+                <div class="second-language">
+                    Google offered in: <a class="second-language" href="#"> Musical notation</a>
+                </div>
             </div>
         </main>
 <!-- Footer -->
