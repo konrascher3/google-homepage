@@ -158,36 +158,91 @@ main div {
 }
  
 .search-bar-container { 
-    border: 1px solid rgb(189, 193, 198);
+    border: 1px solid #5f6368;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 24px;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+    width: 516px;
+}
+
+.search-bar-container:hover {
+    background-color: #303235;
+    border: 1px solid #303235;
+    box-shadow: 0 0 11px #161616;
+    
+}
+
+#google-search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    color: #e8eaed;
+    background-color: transparent;
+    font-size: 16px;
+    height: 34px;
+    margin-bottom: 6px;
+    border: none;
+    outline: none;
+}
+
+.search-buttons-container {
+    flex: auto;
+    flex-direction: row;
     position: relative;
     display: flex;
     align-items: center;
-    height: 44px;
-    width: 100%;
-    border-radius: 24px;
-    padding: 5px 8px 0 16px;
+    padding-top: 18px;
+    top: 0;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .google-search-button {
-
+    flex-grow: 1;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #303134;
+    border: #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 16px;
+    margin: 11px 8px;
+    height: 0;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .lucky-search-button {
-
-}
-
-#googlesearch {
-    border: none;
-    margin: 0;
-    padding: 0;
-    outline: none;
+    flex-grow: 1;
     display: flex;
-    flex: 100%;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    height: 34px;
-    background-color: transparent;
+    position: relative;
+    align-items: center;
+    background-color: #303134;
+    border: #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 16px;
+    margin: 11px 8px;
+    height: 0;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .second-language {
@@ -215,15 +270,22 @@ main div {
 }
 
 .search-icon {
-    position: absolute;
-    padding: 11px 37px;
+    display: flex;
+    align-items: center;
     filter: contrast(0);
-    margin-top: 18px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-right: 13px;
+    color: #bdc1c6;
 }
 
 .mic-icon {
-    position: absolute;
-    padding: 11px 30px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
     filter: contrast(0);
-    margin-top: 18px; 
+    margin-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 5px;
 }
