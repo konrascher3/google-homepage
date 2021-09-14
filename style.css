@@ -43,7 +43,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 main div {
@@ -139,18 +138,29 @@ main div {
 /* Format Google search containers */
 
 .search-container {
-    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.search-contents {
+    padding: 20px;
+    max-height: 160px;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
 .logo-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
+    padding: 100px 0 0;
+
 }
 
 .google-logo {
-    max-width: 60%;  /* Adjust picture size to container size*/
-    max-height: 60%;
+    max-width: 300px;  /* Adjust picture size to container size*/
     display: block;
     margin-top: 4%;
     margin-left: auto;
@@ -158,20 +168,41 @@ main div {
 }
  
 .search-bar-container { 
-    border: 1px solid #5f6368;
     position: relative;
     flex: 1;
-    display: flex;
     align-items: center;
     margin: 0 auto;
-    height: 40px;
+    height: 45px;
     border-radius: 24px;
     padding: 5px 8px 0 16px;
     padding-left: 14px;
-    width: 516px;
+    width: auto;  /* Automatically shrinks search bar */
+    max-width: 585px;  /* Limits automatix width adjussutment */
+    box-sizing: border-box;
+    flex-shrink: 0;
+
 }
 
-.search-bar-container:hover {
+.search-bar-container-items {
+        border: 1px solid #5f6368;
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 24px;
+        padding: 5px 8px 0 16px;
+        padding-left: 14px;
+        width: auto;  /* Automatically shrinks search bar */
+        max-width: 585px;  /* Limits automatix width adjussutment */
+        box-sizing: border-box;
+        flex-shrink: 0;
+    
+    
+}
+
+.search-bar-container-items:hover {
     background-color: #303235;
     border: 1px solid #303235;
     box-shadow: 0 0 11px #161616;
@@ -193,56 +224,59 @@ main div {
 }
 
 .search-buttons-container {
-    flex: auto;
-    flex-direction: row;
-    position: relative;
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    z-index: 0;
     display: flex;
     align-items: center;
-    padding-top: 18px;
-    top: 0;
-    z-index: 0;
-    margin-left: auto;
-    margin-right: auto;
-    
+
+    justify-content: center;
+
 }
 
 .google-search-button {
-    flex-grow: 1;
-    flex-direction: row;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #303134;
-    border: #303134;
-    border-radius: 4px;
-    color: #e8eaed;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin-left: 16px;
-    margin: 11px 8px;
-    height: 0;
+
+    margin: 11px 4px;
+    padding: 0 17px 0 17px;
+    line-height: 37px;
+    height: 36px;
     min-width: 54px;
+
     text-align: center;
+
+    font-size: 14px;
+    color: #e8eaed;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
     cursor: pointer;
 }
 
+.google-search-button:hover {
+    border: 1px solid #616366;
+}
+
 .lucky-search-button {
-    flex-grow: 1;
-    display: flex;
-    position: relative;
-    align-items: center;
-    background-color: #303134;
-    border: #303134;
-    border-radius: 4px;
-    color: #e8eaed;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin-left: 16px;
-    margin: 11px 8px;
-    height: 0;
+
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 37px;
+    height: 36px;
     min-width: 54px;
+
     text-align: center;
+
+    font-size: 14px;
+    color: #e8eaed;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+.lucky-search-button:hover {
+    border: 1px solid #616366;
 }
 
 .second-language {
@@ -276,7 +310,6 @@ main div {
     margin-top: 3px;
     margin-bottom: 5px;
     padding-right: 13px;
-    color: #bdc1c6;
 }
 
 .mic-icon {
@@ -288,4 +321,5 @@ main div {
     margin-left: 13px;
     padding-right: 13px;
     padding-bottom: 5px;
+    color: color: #bdc1c6;
 }
