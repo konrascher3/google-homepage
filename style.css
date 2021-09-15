@@ -49,6 +49,21 @@ main div {
     padding-top: 109px
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background: #171717;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Tooltips */
+
+
+
 /* Navigation bar */
 
 .nav-main-container {
@@ -113,6 +128,7 @@ main div {
 
 .nav-right-container_A {
     padding-left: 16px;
+    white-space: nowrap;
 }
 
 .nav-right-container_A a{
@@ -138,6 +154,7 @@ main div {
 /* Format Google search containers */
 
 .search-container {
+    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -152,6 +169,7 @@ main div {
 }
 
 .logo-container {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,9 +178,9 @@ main div {
 }
 
 .google-logo {
+    margin-top: 120px;
     max-width: 300px;  /* Adjust picture size to container size*/
     display: block;
-    margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -279,7 +297,69 @@ main div {
     border: 1px solid #616366;
 }
 
+.second-language-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .second-language {
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 104px;
+    color: #bdc1c6;
+}
+
+.second-language a {
+    color: #8ab4f8;
+    padding: 0 3px;
+}
+
+.footer-container-top {
+    padding: 15px 30px;
+    border-bottom: 1px solid #212327;
+    font-size: 15px;
+    color: rgba(255,255,255,.54);
+}
+
+.footer-container-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    ;
+}
+
+/* If device width is under 1200px, justify-conent is set to space-evenly */
+@media only screen and (max-width: 1200px) {
+    .footer-container-bottom {
+        justify-content: space-evenly;
+    }
+}
+.footer-container-bottom a{
+    text-decoration: none;
+    color: #999da2;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.footer-container-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-container-bottom-left {
+    display: flex;
+    flex-direction: row;
+
+}
+.footer-container-bottom-right {
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -301,6 +381,7 @@ main div {
 .app-icon:hover {
     background-color: #2f3035; /* Adds light grey background circle on hover*/
     border-radius:50%;
+    /* Add info-box */
 }
 
 .search-icon {
@@ -321,5 +402,10 @@ main div {
     margin-left: 13px;
     padding-right: 13px;
     padding-bottom: 5px;
-    color: color: #bdc1c6;
+    color: #bdc1c6;
+    cursor: pointer;
+}
+
+.mic-icon:hover {
+    /* Add info-box */
 }
