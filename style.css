@@ -338,6 +338,7 @@ footer {
         justify-content: space-evenly;
     }
 }
+
 .footer-container-bottom a{
     text-decoration: none;
     color: #999da2;
@@ -404,8 +405,4 @@ footer {
     padding-bottom: 5px;
     color: #bdc1c6;
     cursor: pointer;
-}
-
-.mic-icon:hover {
-    /* Add info-box */
 }
